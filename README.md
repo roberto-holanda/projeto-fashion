@@ -3,9 +3,7 @@ Projeto fashion que possui conceitos de position e de display flex. Esse projeto
 ************************
     Créditos: Serliv
     Curso: Curso de HTML/CSS. Do zero ao avançado.
-************************
 
-************************
     Créditos: CFB Cursos
     Curso: Curso completo e profissional de Javascript. 
 ************************
