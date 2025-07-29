@@ -5,7 +5,6 @@
     Primeira Função => Executa o script após o carregamento da página. 
     Segunda Função => Adiciona o efeito suave de scroll no elemento de id = "redirection" do HTML5.
     Terceira Função => Insere o ano atual no <footer> da página. 
-
 */
 
 document.addEventListener("DOMContentLoaded", function() {
