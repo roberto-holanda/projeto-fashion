@@ -32,9 +32,7 @@ function scrollToElement(elementId) {
 }
 
 const set_year = (y) => {
-
     let year_now = new Date().getFullYear();
-
     return y.prepend(year_now)
 }
 
