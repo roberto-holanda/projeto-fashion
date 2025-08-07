@@ -1,4 +1,5 @@
 body{
+    font-family: tahoma, arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: content-box;
@@ -14,7 +15,7 @@ body::selection{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #022331;
+    background-color: #162028;
 }
 
 .content .header-content .logo img{
@@ -31,7 +32,7 @@ body::selection{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: all 0.3s ease-out;
+    transition: color 0.3s linear;
     cursor: pointer;
 }
 
@@ -40,8 +41,67 @@ body::selection{
 }
 
 .content .img-top{
-    width: 100%;
+    width: fit-content;
+}
+
+.content .img-top img{
+    position: relative;
+    display: block;
     height: 90%;
+    border-bottom-right-radius: 100px;
+}
+
+.menu-shop .marketing{
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+    top: 15%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 30px 0 0;
+}
+
+.menu-shop .marketing h2{
+    font-size: 50px;
+    margin-left: 35%;
+    margin-bottom: -15px;
+}
+
+.menu-shop .marketing .small-title p{
+    text-align: center;
+    margin-left: 60%;
+    font-size: 20px;
+}
+
+.social-medias{
+    margin: 10px 0 30px 0;
+}
+
+.social-medias ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+.social-medias li{
+    margin: 10px;
+}
+
+.social-medias a{
+    color: black;
+    text-decoration: none;
+}
+
+.social-medias img{
+    max-width: 30%;
+    margin: auto;
+}
+
+.motivacion q{
+    font-size: 10px;
+    margin: 0 -50% 0 50%;
+    text-align: justify;
 }
 
 main .galery-description{
@@ -54,10 +114,11 @@ main .galery-description h1{
 }
 
 main .galery-description p{
-    line-height: 1.5;
-    font-size: 17px;
-    width: 75%;
+    line-height: 2;
+    width: 60%;
+    font-size: 16px;
     margin: auto;
+    color: #555; 
 }
 
 main .galery{
@@ -82,13 +143,17 @@ main .galery .closeth p{
 }
 
 main .infos-shop{
-    background-color: #043c54;
+    background: #003d52 url("img/bg_detalhe.png") no-repeat right bottom;
     height: 350px;
     color: white;
     margin-top: 40px;
     padding: 100px;
     margin: 20px;
-    position: relative;
+}
+
+main .infos-shop::selection{
+    background-color: #000;
+    color: #fff;
 }
 
 main .infos-shop h3{
@@ -104,30 +169,25 @@ main .infos-shop p{
     width: 50%;
 }
 
-main .infos-shop .img-detail{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 .location{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #023950;
     font-weight: 900;
     margin: 30px;
-    line-height: 1.5;
+}
+
+.location .contact-author{
+    font-style: normal;
+}
+
+.location .contact-author-phone{
     letter-spacing: 5px;
 }
 
-
-.location h4, p{
-    margin: 0;
-}
-
-.location p{
-    margin: auto;
+.location .contact-author-title, .contact-author-phone{
+    margin: 0 0 10px;
 }
 
 .location .map{
@@ -140,25 +200,20 @@ main .infos-shop .img-detail{
     padding: 15px;
     color: rgba(128, 128, 128, 0.781);
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .footer-page .copyright{
-    margin: 10px 0 20px 0;
+    margin: 10px 0 0 0px;
 }
 
-.footer-page .redirection{
+.footer-page .url{
     text-transform: uppercase;
     color: rgba(128, 128, 128, 0.781);
+    margin: 10px;
 }
 
-.footer-page #redirection:hover{
-    cursor: pointer;
-}
-
-/*
-    Adiciona efeito de hover em ambos os containers da tag <footer>
-*/
-.footer-page .copyright:hover, .redirection:hover{
+.footer-page .copyright:hover, .url:hover{
     color: white;
     cursor: default;
 }
